@@ -33,31 +33,6 @@
     </head>
     <!-- End Head -->
 
-    <!-- Begin PHP -->
-    <?php
-    error_reporting(0);
-    
-    $name = $_POST['name_register'];
-    $email = $_POST['email_register'];
-    $phone = $_POST['phone_register'];
-    $send = $_POST['send_register'];
-    if ($send == 'enviar'){
-        $conn = new mysqli('localhost', 'root', '', 'pss');     // Create connection
-        
-        if (!$conn) {
-            die("<script>alert('Connection failed.')<script>");     // Check connection
-        } 
-        $sql = "INSERT INTO register (name_register, email_register, phone_register) VALUES ('$name', '$email', '$phone')";
-        if (mysqli_query($conn, $sql)) {
-            echo "<script>alert('New record created successfully')</script>";
-        } else {
-            echo "<script>alert('Erro: Dados inválidos')</script>";
-        }
-    }
-    mysqli_close($conn);
-    ?>
-    <!-- End PHP -->
-
     <!-- Body -->
     <body>
 
@@ -194,8 +169,8 @@
                             </div>
                         </div>
                         <div class="g-media__body g-padding-x-20--xs">
-                            <h3 class="g-font-size-18--xs">Responsive Layout</h3>
-                            <p class="g-margin-b-0--xs">This is where we sit down, grab a cup of coffee and dial in the details.</p>
+                            <h3 class="g-font-size-18--xs">Flexibilidade</h3>
+                            <p class="g-margin-b-0--xs">Trabalhe de onde estiver sem precisar instalar nenhum programa.</p>
                         </div>
                     </div>
                 </div>
@@ -207,8 +182,8 @@
                             </div>
                         </div>
                         <div class="g-media__body g-padding-x-20--xs">
-                            <h3 class="g-font-size-18--xs">Fully Customizable</h3>
-                            <p class="g-margin-b-0--xs">This is where we sit down, grab a cup of coffee and dial in the details.</p>
+                            <h3 class="g-font-size-18--xs">Ferramentas</h3>
+                            <p class="g-margin-b-0--xs">Aqui você encontra ferramentas para gerenciar seus projetos e sua equipe.</p>
                         </div>
                     </div>
                 </div>
@@ -220,50 +195,8 @@
                             </div>
                         </div>
                         <div class="g-media__body g-padding-x-20--xs">
-                            <h3 class="g-font-size-18--xs">Pixel Perfect</h3>
-                            <p class="g-margin-b-0--xs">This is where we sit down, grab a cup of coffee and dial in the details.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- // end row  -->
-            <div class="row">
-                <div class="col-sm-4 g-margin-b-60--xs g-margin-b-0--md">
-                    <div class="clearfix">
-                        <div class="g-media g-width-30--xs">
-                            <div class="wow fadeInDown" data-wow-duration=".3" data-wow-delay=".4s">
-                                <i class="g-font-size-28--xs g-color--primary ti-package"></i>
-                            </div>
-                        </div>
-                        <div class="g-media__body g-padding-x-20--xs">
-                            <h3 class="g-font-size-18--xs">Endless Possibilities</h3>
-                            <p class="g-margin-b-0--xs">This is where we sit down, grab a cup of coffee and dial in the details.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 g-margin-b-60--xs g-margin-b-0--md">
-                    <div class="clearfix">
-                        <div class="g-media g-width-30--xs">
-                            <div class="wow fadeInDown" data-wow-duration=".3" data-wow-delay=".5s">
-                                <i class="g-font-size-28--xs g-color--primary ti-star"></i>
-                            </div>
-                        </div>
-                        <div class="g-media__body g-padding-x-20--xs">
-                            <h3 class="g-font-size-18--xs">Powerful Performance</h3>
-                            <p class="g-margin-b-0--xs">This is where we sit down, grab a cup of coffee and dial in the details.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="clearfix">
-                        <div class="g-media g-width-30--xs">
-                            <div class="wow fadeInDown" data-wow-duration=".3" data-wow-delay=".6s">
-                                <i class="g-font-size-28--xs g-color--primary ti-panel"></i>
-                            </div>
-                        </div>
-                        <div class="g-media__body g-padding-x-20--xs">
-                            <h3 class="g-font-size-18--xs">Parallax Support</h3>
-                            <p class="g-margin-b-0--xs">This is where we sit down, grab a cup of coffee and dial in the details.</p>
+                            <h3 class="g-font-size-18--xs">Projetos</h3>
+                            <p class="g-margin-b-0--xs">Um ambiente desenvolvido para registrar desde as ideias iniciais até a entrega do projeto.</p>
                         </div>
                     </div>
                 </div>
